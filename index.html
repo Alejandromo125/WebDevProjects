@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Te quiero princesa</title>
+    <link rel="icon" href="./assets/heartEmoji.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="title">
+      <h1 id="main_text">¿Quieres comer sushi conmigo?</h1>
+      <img id="heart_image" src="./assets/heartEmoji.png" alt="heart emoji" />
+    </div>
+    <div>
+      <h1 id="secondary_text">
+        Aunque no soy el mejor programador, te quiero muchisimo princesa ❤
+      </h1>
+    </div>
+    <div id="buttons_container">
+      <button class="yes-btn">Chi 💘</button>
+      <button class="no-btn">Ño 💔</button>
+    </div>
+
+    <div class="popup" id="popup">
+      <span class="close-btn" id="closeBtn">✖</span>
+      <h2>TE LANGOSTO PRINCESA 💞</h2>
+      <p>Te prometo el mejor sushi del mundo!</p>
+      <img
+        src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+        alt="gif gatito"
+      />
+    </div>
+
+    <script>
+      const noBtn = document.querySelector(".no-btn");
+      const yesBtn = document.querySelector(".yes-btn");
+      const popup = document.getElementById("popup");
+      const closeBtn = document.getElementById("closeBtn");
+
+      yesBtn.addEventListener("click", () => {
+        popup.classList.add("show");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popup.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>

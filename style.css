@@ -22,12 +22,7 @@ body{
     margin-top:20px;
     animation: pulse 1.5s infinite;
 }
-#secondary_text{
-    height: 50%;
-    width:50%;
-    margin-left: 25%;
-    margin-top:20px;
-}
+
 #buttons_container{
     text-align: center;
     

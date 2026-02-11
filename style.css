@@ -24,8 +24,8 @@ body{
 }
 
 #buttons_container{
+    margin-top:20px;
     text-align: center;
-    
 }
  button {
     padding: 15px 30px;
